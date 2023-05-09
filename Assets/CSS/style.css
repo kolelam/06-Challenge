@@ -1,5 +1,5 @@
 body{
-    background-color: #44adf3;
+    background-color: #0b4f7c;
     align-items: center;
 }
 
@@ -10,10 +10,11 @@ header {
     height: 10vh;
     padding: 10px;
     background-color: #0863c5;
-    color: rgb(224, 10, 10);
+    color: rgb(5, 14, 2);
+    font-size: x-large;
 }
 
-#cityList {
+#cityFinder {
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -26,4 +27,48 @@ header {
     border-style: solid;
     border-radius: 3vw;
     border-width: 3vh;
+}
+
+#airyCard {
+    display: flex;
+    flex-direction: column;
+    width: 69vw;
+    height: fit-content;
+    float:right;
+    padding: 13px;
+    margin: left 8px;
+    background-color:#fbfcfd;
+    border-color: #184677;
+    border-style: solid;
+    border-radius: 3vw;
+    border-width: 3vh;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+
+#cityForecast {
+    display: flex;
+    flex-direction: column;
+    width: 69vw;
+    height: fit-content;
+    float: right;
+    margin-top: 10px;
+    padding: 10px;
+    background-color:#fbfcfd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-color: #184677;
+    border-style: solid;
+    border-radius: 3vw;
+    border-width: 3vh;
+}
+
+#fiveDayForecast {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between; 
+  }
+#fiveDayForecast h2{
+    margin-top: 0px;
 }

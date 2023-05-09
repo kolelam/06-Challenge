@@ -12,7 +12,72 @@
   <header>
     <h1>Weather Dashboard</h1>
   </header>
+  <body>
+    <div id="cityFinder">
+        <h2>City dropdown</h2>
+        <form>
+            <label for="search">Search for a place:</label>
+            <input type="text" id="searchvalue" placeholder="Enter a city name">
+            <button id="searchbtn">Search</button>
+        </form>
+        <div id="searchHistory">
+            <div>Recent Searches: </div>
+            <div id="historyButtons"></div>
+        </div>
+    </div>
+    
+    <div id="airyCard">
+        <h2 id="cityName"></h2>
+        <div id="cityDataCard"></div>
+        <div id="cityDataCardTemp"></div>
+        <div id="cityDataCardHumid"></div>
+        <div id="cityDataCardWind"></div>
+    </div>
+    <div id="cityForecast">
+        <div id="forecastName">
+            <h2>5 Day Forcast</h2>
+        </div>
+        <div id="fivedayforecast">
+           <section id="dayOne" class="forecastCard">
+                <div id="dayOneDate"></div>
+                <div id="dayOneWeather"></div>
+                <div id="dayOneLow"></div>
+                <div id="dayOneHigh"></div>
+           </section>
+           <br>
+           <section id="dayTwo" class="forecastCard">
+                <div id="dayTwoDate"></div>
+                <div id="dayTwoWeather"></div>
+                <div id="dayTwoLow"></div>
+                <div id="dayTwoHigh"></div>
+           </section>
+           <br>
+           <section id="dayThree" class="forecastCard">
+                <div id="dayThreeDate"></div>
+                <div id="dayThreeWeather"></div>
+                <div id="dayThreeLow"></div>
+                <div id="dayThreeHigh"></div>
+           </section>  
+           <br>
+           <section id="dayFour" class="forecastCard">
+                <div id="dayFourDate"></div>
+                <div id="dayFourWeather"></div>
+                <div id="dayFourLow"></div>
+                <div id="dayFourHigh"></div>
+           </section>    
+           <br>
+           <section id="dayFive" class="forecastCard">
+                <div id="dayFiveDate"></div>
+                <div id="dayFiveWeather"></div>
+                <div id="dayFiveLow"></div>
+                <div id="dayFiveHigh"></div>
+           </section>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
