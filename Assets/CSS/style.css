@@ -1,0 +1,29 @@
+body{
+    background-color: #44adf3;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+    padding: 10px;
+    background-color: #0863c5;
+    color: rgb(224, 10, 10);
+}
+
+#cityList {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 25vw;
+    height: 75vh;
+    float: left;
+    padding: 3vh;
+    background-color: #e6ecf1;
+    border-color: #0c3969;
+    border-style: solid;
+    border-radius: 3vw;
+    border-width: 3vh;
+}
