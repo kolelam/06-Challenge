@@ -1,5 +1,5 @@
 // API Key
-var APIKey = "ed01e1ba14862e6e261cf365a5ee76f1"
+var APIKey = "ed01e1ba14862e6e261e0e1597f92eea707b5518508dbab94c2cf365a5ee76f1"
 // search button stuff
 var searchInput = document.getElementById("searchvalue");
 var searchButton = document.getElementById("searchbtn");
@@ -112,3 +112,26 @@ searchButton.addEventListener("click", function(event){
  .catch(error => {
    console.log(error)
  });
+
+  // Search History settings
+  var historyButtons = document.getElementById('historyButtons');
+  var maxHistoryEntries = 5;
+  searchButton.addEventListener('click', function() {
+      var city = searchInput.value.trim();
+      if (city) {
+          searchHistory.unshift(city);
+          if (searchHistory.length > maxHistoryEntries) {
+              searchHistory.pop();
+          }
+          localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
+          searchInput.value = '';
+          renderHistoryButtons();
+      }
+  });
+  historyButtons.addEventListener('click', function(event) {
+      var button = event.target.closest('.cityButton');
+      if (button) {
+          searchInput.value = button.dataset.city;
+      }
+  });
+});
