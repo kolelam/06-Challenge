@@ -37,7 +37,7 @@ header {
     float:right;
     padding: 13px;
     margin: left 8px;
-    background-color:#fbfcfd;
+    background-color:#ecf1f5;
     border-color: #184677;
     border-style: solid;
     border-radius: 3vw;
@@ -56,8 +56,8 @@ header {
     margin-top: 10px;
     padding: 10px;
     background-color:#fbfcfd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-color: #184677;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-color: #0553a7;
     border-style: solid;
     border-radius: 3vw;
     border-width: 3vh;
@@ -72,3 +72,36 @@ header {
 #fiveDayForecast h2{
     margin-top: 0px;
 }
+.forecastCard {
+    border: 3px solid #0e5e83;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    box-sizing: border-box;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+}
+#forecastName{
+    text-align: center;
+}
+
+#historyButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cityButton {
+    background-color: #1c699c;
+    color: black;
+    border-color:#062f5a;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: fit-content;
+    text-align: center;
+  }
