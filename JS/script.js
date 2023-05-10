@@ -1,5 +1,5 @@
 // API Key
-var APIKey = "ed01e1ba14862e6e261e0e1597f92eea707b5518508dbab94c2cf365a5ee76f1"
+var APIKey = "478074f7f4c1eee355397edb8e941e9b"
 // search button stuff
 var searchInput = document.getElementById("searchvalue");
 var searchButton = document.getElementById("searchbtn");
