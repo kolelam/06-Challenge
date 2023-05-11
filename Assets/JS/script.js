@@ -53,17 +53,19 @@ searchButton.addEventListener("click", function(event){
  .then(response => response.json())
  .then(data => {
      console.log(data)
+     
+
+    // Each day up to 5 days for the forecast starting with day one, the current date
+    var dayOneDate = document.getElementById("dayOneDate")
+    var dayOneWeather = document.getElementById("dayOneWeather")
+    var dayOneLow = document.getElementById("dayOneLow")
+    var dayOneHigh = document.getElementById("dayOneHigh")
+     
      // using Day.js for date formatting
      dayOneDate.innerHTML = dayjs().format('MMMM-D-YYYY')
      dayOneWeather.innerHTML = (data.list[0].weather[0].main)
      dayOneLow.innerHTML = ("Low: " + data.list[0].main.temp_min + "°F")
      dayOneHigh.innerHTML = ("High: " + data.list[0].main.temp_max + "°F")
-
-     // Each day up to 5 days for the forecast starting with day one, the current date
-     var dayOneDate = document.getElementById("dayOneDate")
-     var dayOneWeather = document.getElementById("dayOneWeather")
-     var dayOneLow = document.getElementById("dayOneLow")
-     var dayOneHigh = document.getElementById("dayOneHigh")
 
      // day two
      var dayTwoDate = document.getElementById("dayTwoDate")
